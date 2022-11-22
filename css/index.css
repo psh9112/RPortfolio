@@ -1,0 +1,2257 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+/*
+font-family: 'Damion', cursive;
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+*/
+html,
+body {
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+article,
+figure,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  color: #0B0D0A;
+  font-size: 20px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  line-height: 1.4em;
+}
+
+.h1 {
+  font-size: 2rem;
+}
+
+.h2 {
+  font-size: 1.75rem;
+}
+
+.h3 {
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 1.5rem;
+}
+
+.h5 {
+  font-size: 1.2rem;
+}
+
+.home {
+  font-family: "Damion", cursive;
+}
+
+.title-02 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sub_tab {
+  font-size: 1.5rem;
+}
+
+.sub-title {
+  font-size: 1.75rem;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transition: 0.5s;
+}
+header.active {
+  transform: translateY(-100%);
+}
+header .top {
+  width: 1596px;
+  margin: 2vw auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top > h1 a {
+  display: inline-block;
+  flex-shrink: 0;
+}
+header .top > h1 a:hover {
+  color: #bc9273;
+}
+header .top #menu {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top #menu .h3 {
+  flex-shrink: 0;
+  margin-left: 4vw;
+  padding: 0 1vw;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+header .top #menu .h3:hover {
+  color: #bc9273;
+}
+header .top #menu .h3:nth-of-type(1) {
+  display: none;
+}
+header .top #menu .bar {
+  width: 25px;
+  height: 20px;
+  margin-left: 4vw;
+  position: relative;
+  display: none;
+}
+header .top #menu .bar > span {
+  width: 100%;
+  border-bottom: 3px solid #0B0D0A;
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+}
+header .top #menu .bar > span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .top #menu .bar > span:nth-of-type(3) {
+  bottom: 0%;
+}
+header .top #menu .bar:hover > span {
+  border-color: #bc9273;
+}
+header .top #menu .bar.nav-active > span {
+  border-color: #bc9273;
+}
+header .top #menu .bar.nav-active > span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+header .top #menu .bar.nav-active > span:nth-of-type(2) {
+  opacity: 0;
+}
+header .top #menu .bar.nav-active > span:nth-of-type(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 30;
+  transition: 0.5s;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+nav.open {
+  display: block;
+}
+nav.open .navigator {
+  transform: translateX(0%);
+}
+nav .navigator {
+  width: 100%;
+  height: 100%;
+  padding-top: 5vw;
+  padding-left: 3.5vw;
+  background-color: #fff;
+  transform: translateX(-100%);
+  white-space: pre-line;
+}
+nav .navigator > a {
+  display: inline-block;
+  color: #0B0D0A;
+  text-transform: uppercase;
+  padding: 1vw 0;
+}
+nav .navigator > a:hover {
+  color: #bc9273;
+}
+
+footer {
+  width: 100%;
+  z-index: 50;
+}
+footer .bottom {
+  width: 1596px;
+  border-top: 1px solid #0B0D0A;
+  margin: 200px auto 0;
+}
+footer .bottom .contain {
+  width: 100%;
+  padding: 100px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom .contain .info01 {
+  flex-shrink: 0;
+}
+footer .bottom .contain .info01 .h2 {
+  margin-bottom: 30px;
+}
+footer .bottom .contain .info01 > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+footer .bottom .contain .info01 > div > p {
+  flex-shrink: 0;
+}
+footer .bottom .contain .info01 > div > p > span {
+  display: block;
+  margin: 25px 50px 25px 0;
+  text-align: left;
+}
+footer .bottom .contain .info01 .last {
+  width: 100%;
+  margin-top: 20px;
+}
+footer .bottom .contain .info02 {
+  flex-shrink: 0;
+}
+footer .bottom .contain .info02 > a {
+  display: inline-block;
+  padding-left: 50px;
+  vertical-align: top;
+}
+footer .bottom .contain .info02 > a:hover > svg > path {
+  fill: #bc9273;
+}
+
+.top_btn {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  z-index: 10;
+}
+.top_btn > button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.top_btn > button > svg {
+  width: 90%;
+}
+.top_btn > button > svg > path:hover {
+  fill: #bc9273;
+}
+
+/*
+==============================================
+=================반응형 데스크탑================
+==============================================
+*/
+@media (min-width: 1025px) and (max-width: 1600px) {
+  header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: 0.5s;
+  }
+  header.active {
+    transform: translateY(-100%);
+  }
+  header .top {
+    width: 80vw;
+    margin: 2vw auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .top > h1 a {
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+  }
+  header .top > h1 a:hover {
+    color: #bc9273;
+  }
+  header .top #menu {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .top #menu .h3 {
+    flex-shrink: 0;
+    margin-left: 2vw;
+    padding: 0 1vw;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 0.8rem;
+  }
+  header .top #menu .h3:hover {
+    color: #bc9273;
+  }
+  header .top #menu .h3:nth-of-type(1) {
+    display: none;
+  }
+  header .top #menu .bar {
+    width: 25px;
+    height: 20px;
+    margin-left: 4vw;
+    position: relative;
+    display: none;
+  }
+  header .top #menu .bar > span {
+    width: 100%;
+    border-bottom: 3px solid #0B0D0A;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+  }
+  header .top #menu .bar > span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .top #menu .bar > span:nth-of-type(3) {
+    bottom: 0%;
+  }
+  header .top #menu .bar:hover > span {
+    border-color: #bc9273;
+  }
+  header .top #menu .bar.nav-active > span {
+    border-color: #bc9273;
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(2) {
+    opacity: 0;
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+  nav {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 30;
+    transition: 0.5s;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  nav.open {
+    display: block;
+  }
+  nav.open .navigator {
+    transform: translateX(0%);
+  }
+  nav .navigator {
+    width: 100%;
+    height: 100%;
+    padding-top: 5vw;
+    padding-left: 3.5vw;
+    background-color: #fff;
+    transform: translateX(-100%);
+    white-space: pre-line;
+  }
+  nav .navigator > a {
+    display: inline-block;
+    color: #0B0D0A;
+    text-transform: uppercase;
+    padding: 1vw 0;
+  }
+  nav .navigator > a:hover {
+    color: #bc9273;
+  }
+  footer {
+    width: 100%;
+    z-index: 50;
+  }
+  footer .bottom {
+    width: 80vw;
+    border-top: 1px solid #0B0D0A;
+    margin: 200px auto 0;
+  }
+  footer .bottom .contain {
+    width: 100%;
+    padding: 100px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .bottom .contain .info01 {
+    flex-shrink: 0;
+  }
+  footer .bottom .contain .info01 .h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  footer .bottom .contain .info01 > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  footer .bottom .contain .info01 > div > p {
+    flex-shrink: 0;
+  }
+  footer .bottom .contain .info01 > div > p > span {
+    display: block;
+    margin: 20px 40px 20px 0;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  footer .bottom .contain .info01 > div > p > span > a {
+    font-size: 0.8rem;
+  }
+  footer .bottom .contain .info01 .last {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 0.8rem;
+  }
+  footer .bottom .contain .info02 {
+    flex-shrink: 0;
+  }
+  footer .bottom .contain .info02 > a {
+    display: inline-block;
+    padding-left: 28px;
+    vertical-align: top;
+  }
+  footer .bottom .contain .info02 > a > svg {
+    width: 80%;
+  }
+  footer .bottom .contain .info02 > a:hover > svg > path {
+    fill: #bc9273;
+  }
+  .top_btn {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    z-index: 10;
+  }
+  .top_btn > button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .top_btn > button > svg {
+    width: 70%;
+  }
+  .top_btn > button > svg > path:hover {
+    fill: #bc9273;
+  }
+}
+/* 
+==============================================
+=================반응형 타블랫=================
+==============================================
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: 0.5s;
+  }
+  header.active {
+    transform: translateY(-100%);
+  }
+  header .top {
+    width: 80vw;
+    margin: 2vw auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .top > h1 a {
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+  }
+  header .top > h1 a:hover {
+    color: #bc9273;
+  }
+  header .top #menu {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .top #menu .h3 {
+    flex-shrink: 0;
+    margin-left: 2vw;
+    padding: 0 1vw;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 0.7rem;
+  }
+  header .top #menu .h3:hover {
+    color: #bc9273;
+  }
+  header .top #menu .h3:nth-of-type(1) {
+    display: none;
+  }
+  header .top #menu .bar {
+    width: 25px;
+    height: 20px;
+    margin-left: 4vw;
+    position: relative;
+    display: none;
+  }
+  header .top #menu .bar > span {
+    width: 100%;
+    border-bottom: 2px solid #0B0D0A;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+  }
+  header .top #menu .bar > span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .top #menu .bar > span:nth-of-type(3) {
+    bottom: 0%;
+  }
+  header .top #menu .bar:hover > span {
+    border-color: #bc9273;
+  }
+  header .top #menu .bar.nav-active > span {
+    border-color: #bc9273;
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(2) {
+    opacity: 0;
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+  nav {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 30;
+    transition: 0.5s;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  nav.open {
+    display: block;
+  }
+  nav.open .navigator {
+    transform: translateX(0%);
+  }
+  nav .navigator {
+    width: 100%;
+    height: 100%;
+    padding-top: 10vw;
+    padding-left: 10vw;
+    background-color: #fff;
+    transform: translateX(-100%);
+    white-space: pre-line;
+  }
+  nav .navigator > a {
+    display: inline-block;
+    color: #0B0D0A;
+    text-transform: uppercase;
+    padding: 1vw 0;
+  }
+  nav .navigator > a:hover {
+    color: #bc9273;
+  }
+  footer {
+    width: 100%;
+    z-index: 50;
+  }
+  footer .bottom {
+    width: 80vw;
+    border-top: 1px solid #0B0D0A;
+    margin: 200px auto 0;
+  }
+  footer .bottom .contain {
+    width: 100%;
+    padding: 100px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .bottom .contain .info01 {
+    flex-shrink: 0;
+  }
+  footer .bottom .contain .info01 .h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  footer .bottom .contain .info01 > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  footer .bottom .contain .info01 > div > p {
+    flex-shrink: 0;
+  }
+  footer .bottom .contain .info01 > div > p > span {
+    display: block;
+    margin: 20px 40px 20px 0;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  footer .bottom .contain .info01 > div > p > span > a {
+    font-size: 0.7rem;
+  }
+  footer .bottom .contain .info01 .last {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 0.7rem;
+  }
+  footer .bottom .contain .info02 {
+    flex-shrink: 0;
+  }
+  footer .bottom .contain .info02 > a {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: top;
+  }
+  footer .bottom .contain .info02 > a > svg {
+    width: 60%;
+  }
+  footer .bottom .contain .info02 > a:hover > svg > path {
+    fill: #bc9273;
+  }
+  .top_btn {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    z-index: 10;
+  }
+  .top_btn > button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .top_btn > button > svg {
+    width: 60%;
+  }
+  .top_btn > button > svg > path:hover {
+    fill: #bc9273;
+  }
+}
+/*
+==============================================
+=================반응형 모바일=================
+==============================================
+*/
+@media (min-width: 320px) and (max-width: 767px) {
+  header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: 0.5s;
+  }
+  header.active {
+    transform: translateY(-100%);
+  }
+  header .top {
+    width: 90vw;
+    margin: 2vw auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .top > h1 a {
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 0.8rem;
+  }
+  header .top > h1 a:hover {
+    color: #bc9273;
+  }
+  header .top #menu {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .top #menu .h3 {
+    flex-shrink: 0;
+    margin-left: 1vw;
+    padding: 0 1vw;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 0.55rem;
+  }
+  header .top #menu .h3:hover {
+    color: #bc9273;
+  }
+  header .top #menu .h3:nth-of-type(1) {
+    display: none;
+  }
+  header .top #menu .bar {
+    width: 25px;
+    height: 20px;
+    margin-left: 4vw;
+    position: relative;
+    display: none;
+  }
+  header .top #menu .bar > span {
+    width: 100%;
+    border-bottom: 2px solid #0B0D0A;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+  }
+  header .top #menu .bar > span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .top #menu .bar > span:nth-of-type(3) {
+    bottom: 0%;
+  }
+  header .top #menu .bar:hover > span {
+    border-color: #bc9273;
+  }
+  header .top #menu .bar.nav-active > span {
+    border-color: #bc9273;
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(2) {
+    opacity: 0;
+  }
+  header .top #menu .bar.nav-active > span:nth-of-type(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+  nav {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 30;
+    transition: 0.5s;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  nav.open {
+    display: block;
+  }
+  nav.open .navigator {
+    transform: translateX(0%);
+  }
+  nav .navigator {
+    width: 100%;
+    height: 100%;
+    padding-top: 10vw;
+    padding-left: 10vw;
+    background-color: #fff;
+    transform: translateX(-100%);
+    white-space: pre-line;
+  }
+  nav .navigator > a {
+    display: inline-block;
+    color: #0B0D0A;
+    text-transform: uppercase;
+    padding: 1vw 0;
+  }
+  nav .navigator > a:hover {
+    color: #bc9273;
+  }
+  footer {
+    width: 100%;
+    z-index: 50;
+  }
+  footer .bottom {
+    width: 90vw;
+    border-top: 1px solid #0B0D0A;
+    margin: 100px auto 0;
+  }
+  footer .bottom .contain {
+    width: 100%;
+    padding: 40px 40px 60px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+  }
+  footer .bottom .contain .info01 {
+    flex-shrink: 0;
+  }
+  footer .bottom .contain .info01 .h2 {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+  }
+  footer .bottom .contain .info01 > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  footer .bottom .contain .info01 > div > p {
+    flex-shrink: 0;
+  }
+  footer .bottom .contain .info01 > div > p > span {
+    display: block;
+    margin: 20px 40px 20px 0;
+    text-align: left;
+    font-size: 0.6rem;
+  }
+  footer .bottom .contain .info01 > div > p > span > a {
+    font-size: 0.6rem;
+  }
+  footer .bottom .contain .info01 .last {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 0.6rem;
+  }
+  footer .bottom .contain .info02 {
+    flex-shrink: 0;
+    margin-bottom: 20px;
+  }
+  footer .bottom .contain .info02 > a {
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: top;
+  }
+  footer .bottom .contain .info02 > a:nth-of-type(1) {
+    padding-left: 0;
+  }
+  footer .bottom .contain .info02 > a > svg {
+    width: 60%;
+  }
+  footer .bottom .contain .info02 > a:hover > svg > path {
+    fill: #bc9273;
+  }
+  .top_btn {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    z-index: 10;
+  }
+  .top_btn > button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .top_btn > button > svg {
+    width: 50%;
+  }
+  .top_btn > button > svg > path:hover {
+    fill: #bc9273;
+  }
+}
+main {
+  position: relative;
+}
+main .contents {
+  width: 100%;
+  height: 100%;
+}
+main .contents .main01 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+main .contents .main01 .title {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+main .contents .main01 .title > p {
+  line-height: 1.2em;
+  color: #000;
+}
+main .contents .main01 .title .sub-title {
+  font-size: 5rem;
+  font-weight: 200;
+  opacity: 0;
+  -webkit-animation: cover1 2.5s forwards;
+          animation: cover1 2.5s forwards;
+}
+main .contents .main01 .title .main-title {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  overflow: hidden;
+  transform: translateY(100%);
+  -webkit-animation: cover2 1s linear forwards;
+          animation: cover2 1s linear forwards;
+}
+main .contents .main02 {
+  width: 100%;
+  padding: 6vw 0 0;
+}
+main .contents .main02 .me {
+  width: 1596px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contents .main02 .me > p {
+  width: 8vw;
+  margin-right: 3vw;
+}
+main .contents .main02 .me > p > img {
+  width: 100%;
+  margin: 0 5vw;
+}
+main .contents .main02 .me .title-02 {
+  white-space: pre-line;
+  margin-left: 4vw;
+  line-height: 1.2em;
+  overflow: hidden;
+  transform: translateX(-100%);
+  opacity: 0;
+  -webkit-animation: cover3 1s 0.5s linear forwards;
+          animation: cover3 1s 0.5s linear forwards;
+  display: none;
+}
+main .contents .main02 .me .title-02.active {
+  display: block;
+}
+main .contents .main02 .contents-box {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+main .contents .main02 .contents-box .subject {
+  width: 1480px;
+  margin: 3vw auto;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+main .contents .main02 .contents-box .intro {
+  width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+main .contents .main02 .contents-box .intro .info-list {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 2.5vw;
+  flex-shrink: 0;
+}
+main .contents .main02 .contents-box .intro .info-list > article {
+  margin-bottom: 3vw;
+}
+main .contents .main02 .contents-box .intro .info-list > article .h5 {
+  margin-bottom: 2vw;
+}
+main .contents .main02 .contain01 {
+  padding: 0 0 5vw;
+}
+main .contents .main02 .contain01 .subject::after {
+  content: "";
+  clear: both;
+  width: 100%;
+  height: 12px;
+  display: block;
+  border-bottom: 2px solid #282828;
+}
+main .contents .main02 .contain01 .about .info-list > article > div {
+  display: flex;
+  justify-content: left;
+}
+main .contents .main02 .contain01 .about .info-list > article > div .dec {
+  flex-shrink: 0;
+  white-space: pre-line;
+}
+main .contents .main02 .contain01 .about .info-list > article > div .dec > span {
+  display: block;
+  white-space: pre-line;
+  line-height: 1.6em;
+}
+main .contents .main02 .contain01 .about .info-list > article > div .dec > span > small {
+  font-size: 0.8rem;
+}
+main .contents .main02 .contain01 .about .info-list > article > div .dec:nth-of-type(2) {
+  padding-left: 1.7vw;
+}
+main .contents .main02 .contain02 {
+  background-color: #0B0D0A;
+  padding: 5vw 0;
+}
+main .contents .main02 .contain02 .subject {
+  color: #fff;
+}
+main .contents .main02 .contain02 .subject::after {
+  content: "";
+  clear: both;
+  width: 100%;
+  height: 12px;
+  display: block;
+  border-bottom: 2px solid #fff;
+}
+main .contents .main02 .contain02 .skill .info-list > article .h5 {
+  color: #fff;
+}
+main .contents .main02 .contain02 .skill .info-list > article .h5 > img {
+  display: inline-block;
+  padding-right: 1vw;
+}
+main .contents .main02 .contain02 .skill .info-list > article > div .dec > span {
+  display: block;
+  white-space: pre-line;
+  color: #fff;
+  padding-bottom: 1.5vw;
+  line-height: 1.6em;
+}
+main .contents .main02 .contain02 .skill .info-list:nth-of-type(1) > article > div .dec {
+  padding-left: 4vw;
+}
+main .contents .main02 .contain02 .skill .info-list:nth-of-type(2) > article > div .dec {
+  padding-left: 3vw;
+}
+main .contents .main03 {
+  width: 100%;
+  padding: 11vw 0 0;
+  overflow: hidden;
+}
+main .contents .main03 .works {
+  width: 1480px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+main .contents .main03 .works > div {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+main .contents .main03 .works .project-img {
+  width: 900px;
+  height: 480px;
+  float: left;
+  overflow: hidden;
+}
+main .contents .main03 .works .project-img > ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main .contents .main03 .works .project-img > ul > li {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main .contents .main03 .works .project-img > ul > li > span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+main .contents .main03 .works .project-img > ul > li > span > b {
+  width: 100%;
+  height: 100%;
+  padding: 180px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: pre-line;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+main .contents .main03 .works .project-img > ul > li > span > b > small {
+  color: #fff;
+  font-size: 1.5rem;
+}
+main .contents .main03 .works .project-img > ul > li > span > img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 20px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .contents .main03 .works .project-img > ul > li > span:hover > b {
+  display: inline-block;
+}
+main .contents .main03 .works .project-img > ul > li.active {
+  display: block;
+}
+main .contents .main03 .works .project-list {
+  margin-left: 6vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  max-height: 450px;
+  float: left;
+}
+main .contents .main03 .works .project-list > article .title-02 {
+  flex-shrink: 0;
+  white-space: pre-line;
+  transform: translateY(-100%);
+  opacity: 0;
+  -webkit-animation: cover4 1s 0.5s linear forwards;
+          animation: cover4 1s 0.5s linear forwards;
+  display: none;
+}
+main .contents .main03 .works .project-list > article .title-02.active {
+  display: block;
+}
+main .contents .main03 .works .project-list > article > ul {
+  height: 200px;
+  flex-shrink: 0;
+  margin: 2vw 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 1vw;
+}
+main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar {
+  width: 2px;
+  z-index: 2;
+}
+main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-thumb {
+  background-color: #0B0D0A;
+}
+main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-track {
+  background-color: #dfdfdf;
+}
+main .contents .main03 .works .project-list > article > ul > li {
+  padding: 0.8vw;
+  border-top: 1px solid #dfdfdf;
+  color: #dfdfdf;
+  cursor: pointer;
+}
+main .contents .main03 .works .project-list > article > ul > li.active {
+  color: #0B0D0A;
+}
+main .contents .main03 .works .project-list > article > p > a {
+  width: 100%;
+  display: block;
+  color: #0B0D0A;
+  text-align: left;
+}
+main .contents .main03 .works .project-list > article > p > a:hover {
+  color: #bc9273;
+}
+main .contents .main04 {
+  padding: 5vw 0 0;
+}
+
+@-webkit-keyframes cover1 {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cover1 {
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cover2 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes cover2 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cover3 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes cover3 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cover4 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes cover4 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*
+==============================================
+=================반응형 데스크탑================
+==============================================
+*/
+@media (min-width: 1025px) and (max-width: 1600px) {
+  main {
+    position: relative;
+  }
+  main .contents {
+    width: 100%;
+    height: 100%;
+  }
+  main .contents .main01 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  main .contents .main01 .title {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  main .contents .main01 .title > p {
+    line-height: 1.2em;
+    color: #000;
+  }
+  main .contents .main01 .title .sub-title {
+    font-size: 3rem;
+    font-weight: 200;
+    opacity: 0;
+    -webkit-animation: cover1 2.5s forwards;
+            animation: cover1 2.5s forwards;
+  }
+  main .contents .main01 .title .main-title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden;
+    transform: translateY(100%);
+    -webkit-animation: cover2 1s linear forwards;
+            animation: cover2 1s linear forwards;
+  }
+  main .contents .main02 {
+    width: 100%;
+    padding: 5vw 0 0;
+  }
+  main .contents .main02 .me {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contents .main02 .me > p {
+    width: 8vw;
+    margin-right: 3vw;
+  }
+  main .contents .main02 .me > p > img {
+    width: 100%;
+    margin: 0 5vw;
+  }
+  main .contents .main02 .me .title-02 {
+    white-space: pre-line;
+    margin-left: 4vw;
+    line-height: 1.2em;
+    overflow: hidden;
+    transform: translateX(-100%);
+    opacity: 0;
+    -webkit-animation: cover3 1s 0.5s linear forwards;
+            animation: cover3 1s 0.5s linear forwards;
+    display: none;
+    font-size: 1.2rem;
+  }
+  main .contents .main02 .me .title-02.active {
+    display: block;
+  }
+  main .contents .main02 .contents-box {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  main .contents .main02 .contents-box .subject {
+    width: 80vw;
+    margin: 3vw auto;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  main .contents .main02 .contents-box .intro {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .contents .main02 .contents-box .intro .info-list {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 2vw;
+    flex-shrink: 0;
+  }
+  main .contents .main02 .contents-box .intro .info-list > article {
+    margin-bottom: 3vw;
+  }
+  main .contents .main02 .contents-box .intro .info-list > article .h5 {
+    margin-bottom: 1.5vw;
+    font-size: 1rem;
+  }
+  main .contents .main02 .contain01 {
+    padding: 0 0 5vw;
+  }
+  main .contents .main02 .contain01 .subject::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 12px;
+    display: block;
+    border-bottom: 2px solid #282828;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div {
+    display: flex;
+    justify-content: left;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec {
+    flex-shrink: 0;
+    white-space: pre-line;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span {
+    display: block;
+    white-space: pre-line;
+    line-height: 1.6em;
+    font-size: 0.8rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span > small {
+    font-size: 0.6rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span > b {
+    font-size: 0.8rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec:nth-of-type(2) {
+    padding-left: 1.7vw;
+  }
+  main .contents .main02 .contain02 {
+    background-color: #0B0D0A;
+    padding: 5vw 0;
+  }
+  main .contents .main02 .contain02 .subject {
+    color: #fff;
+  }
+  main .contents .main02 .contain02 .subject::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 12px;
+    display: block;
+    border-bottom: 2px solid #fff;
+  }
+  main .contents .main02 .contain02 .skill .info-list > article .h5 {
+    color: #fff;
+    font-size: 1rem;
+  }
+  main .contents .main02 .contain02 .skill .info-list > article .h5 > img {
+    display: inline-block;
+    padding-right: 1.5vw;
+  }
+  main .contents .main02 .contain02 .skill .info-list > article > div .dec > span {
+    display: block;
+    white-space: pre-line;
+    color: #fff;
+    padding-bottom: 1.5vw;
+    line-height: 1.6em;
+    font-size: 0.8rem;
+  }
+  main .contents .main02 .contain02 .skill .info-list:nth-of-type(1) > article > div .dec {
+    padding-left: 9vw;
+  }
+  main .contents .main02 .contain02 .skill .info-list:nth-of-type(2) > article > div .dec {
+    padding-left: 5vw;
+  }
+  main .contents .main03 {
+    width: 100%;
+    padding: 11vw 0 0;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  main .contents .main03 .works {
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  main .contents .main03 .works > div {
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  main .contents .main03 .works .project-img {
+    width: 45vw;
+    height: 25vw;
+    float: left;
+    overflow: hidden;
+  }
+  main .contents .main03 .works .project-img > ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  main .contents .main03 .works .project-img > ul > li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  main .contents .main03 .works .project-img > ul > li > span {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > b {
+    width: 100%;
+    height: 100%;
+    padding: 140px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-line;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > b > small {
+    color: #fff;
+    font-size: 1rem;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .contents .main03 .works .project-img > ul > li > span:hover > b {
+    display: inline-block;
+  }
+  main .contents .main03 .works .project-img > ul > li.active {
+    display: block;
+  }
+  main .contents .main03 .works .project-list {
+    margin-left: 6vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30vw;
+    max-height: 30vw;
+    float: left;
+  }
+  main .contents .main03 .works .project-list > article {
+    height: 100%;
+  }
+  main .contents .main03 .works .project-list > article .title-02 {
+    flex-shrink: 0;
+    white-space: pre-line;
+    transform: translateY(-100%);
+    opacity: 0;
+    -webkit-animation: cover4 1s 0.5s linear forwards;
+            animation: cover4 1s 0.5s linear forwards;
+    display: none;
+    font-size: 1.2rem;
+  }
+  main .contents .main03 .works .project-list > article .title-02.active {
+    display: block;
+  }
+  main .contents .main03 .works .project-list > article > ul {
+    height: 10vw;
+    flex-shrink: 0;
+    margin: 2vw auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1vw;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar {
+    width: 2px;
+    z-index: 2;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-thumb {
+    background-color: #0B0D0A;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-track {
+    background-color: #dfdfdf;
+  }
+  main .contents .main03 .works .project-list > article > ul > li {
+    padding: 0.8vw;
+    border-top: 1px solid #dfdfdf;
+    color: #dfdfdf;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+  main .contents .main03 .works .project-list > article > ul > li.active {
+    color: #0B0D0A;
+  }
+  main .contents .main03 .works .project-list > article > p > a {
+    width: 100%;
+    display: block;
+    color: #0B0D0A;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  main .contents .main03 .works .project-list > article > p > a:hover {
+    color: #bc9273;
+  }
+  main .contents .main04 {
+    padding: 0;
+  }
+}
+/* 
+==============================================
+=================반응형 타블랫=================
+==============================================
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    position: relative;
+  }
+  main .contents {
+    width: 100%;
+    height: 100%;
+  }
+  main .contents .main01 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  main .contents .main01 .title {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  main .contents .main01 .title > p {
+    line-height: 1.2em;
+    color: #000;
+  }
+  main .contents .main01 .title .sub-title {
+    font-size: 2.5rem;
+    font-weight: 200;
+    opacity: 0;
+    -webkit-animation: cover1 2.5s forwards;
+            animation: cover1 2.5s forwards;
+  }
+  main .contents .main01 .title .main-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden;
+    transform: translateY(100%);
+    -webkit-animation: cover2 1s linear forwards;
+            animation: cover2 1s linear forwards;
+  }
+  main .contents .main02 {
+    width: 100%;
+    padding: 5vw 0 0;
+  }
+  main .contents .main02 .me {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contents .main02 .me > p {
+    width: 8vw;
+    margin-right: 3vw;
+  }
+  main .contents .main02 .me > p > img {
+    width: 100%;
+    margin: 0 5vw;
+  }
+  main .contents .main02 .me .title-02 {
+    white-space: pre-line;
+    margin-left: 4vw;
+    line-height: 1.2em;
+    overflow: hidden;
+    transform: translateX(-100%);
+    opacity: 0;
+    -webkit-animation: cover3 1s 0.5s linear forwards;
+            animation: cover3 1s 0.5s linear forwards;
+    display: none;
+    font-size: 1rem;
+  }
+  main .contents .main02 .me .title-02.active {
+    display: block;
+  }
+  main .contents .main02 .contents-box {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  main .contents .main02 .contents-box .subject {
+    width: 80vw;
+    margin: 3vw auto;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  main .contents .main02 .contents-box .intro {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .contents .main02 .contents-box .intro .info-list {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 2vw;
+    flex-shrink: 0;
+  }
+  main .contents .main02 .contents-box .intro .info-list > article {
+    margin-bottom: 3vw;
+  }
+  main .contents .main02 .contents-box .intro .info-list > article .h5 {
+    margin-bottom: 1.5vw;
+    font-size: 0.8rem;
+  }
+  main .contents .main02 .contain01 {
+    padding: 0 0 5vw;
+  }
+  main .contents .main02 .contain01 .subject::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 12px;
+    display: block;
+    border-bottom: 2px solid #282828;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div {
+    display: flex;
+    justify-content: left;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec {
+    flex-shrink: 0;
+    white-space: pre-line;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span {
+    display: block;
+    white-space: pre-line;
+    line-height: 2.4em;
+    font-size: 0.6rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span > small {
+    font-size: 0.5rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span > b {
+    font-size: 0.6rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec:nth-of-type(2) {
+    padding-left: 1.7vw;
+  }
+  main .contents .main02 .contain02 {
+    background-color: #0B0D0A;
+    padding: 5vw 0;
+  }
+  main .contents .main02 .contain02 .subject {
+    color: #fff;
+  }
+  main .contents .main02 .contain02 .subject::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 12px;
+    display: block;
+    border-bottom: 2px solid #fff;
+  }
+  main .contents .main02 .contain02 .skill > .info-list > article .h5 {
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  main .contents .main02 .contain02 .skill > .info-list > article .h5 > img {
+    width: 20%;
+    display: inline-block;
+    padding-right: 1.5vw;
+  }
+  main .contents .main02 .contain02 .skill > .info-list > article > div .dec > span {
+    display: block;
+    white-space: pre-line;
+    color: #fff;
+    padding-bottom: 1.5vw;
+    line-height: 1.6em;
+    font-size: 0.6rem;
+  }
+  main .contents .main02 .contain02 .skill > .info-list:nth-of-type(1) > article > div .dec {
+    padding-left: 8vw;
+  }
+  main .contents .main02 .contain02 .skill > .info-list:nth-of-type(2) {
+    padding-left: 5vw;
+  }
+  main .contents .main02 .contain02 .skill > .info-list:nth-of-type(2) > article .h5 > img {
+    width: 15%;
+  }
+  main .contents .main02 .contain02 .skill > .info-list:nth-of-type(2) > article > div .dec {
+    padding-left: 5vw;
+  }
+  main .contents .main03 {
+    width: 100%;
+    padding: 11vw 0 0;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  main .contents .main03 .works {
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  main .contents .main03 .works > div {
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  main .contents .main03 .works .project-img {
+    width: 70vw;
+    height: 40vw;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto 5vw;
+  }
+  main .contents .main03 .works .project-img > ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  main .contents .main03 .works .project-img > ul > li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  main .contents .main03 .works .project-img > ul > li > span {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > b {
+    width: 100%;
+    height: 100%;
+    padding: 140px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-line;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > b > small {
+    color: #fff;
+    font-size: 1rem;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .contents .main03 .works .project-img > ul > li > span:hover > b {
+    display: inline-block;
+  }
+  main .contents .main03 .works .project-img > ul > li.active {
+    display: block;
+  }
+  main .contents .main03 .works .project-list {
+    width: 70vw;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    max-width: 80vw;
+    max-height: 50vw;
+    float: none;
+  }
+  main .contents .main03 .works .project-list > article {
+    height: 100%;
+  }
+  main .contents .main03 .works .project-list > article .title-02 {
+    flex-shrink: 0;
+    white-space: initial;
+    transform: translateY(-100%);
+    opacity: 0;
+    -webkit-animation: cover4 1s 0.5s linear forwards;
+            animation: cover4 1s 0.5s linear forwards;
+    display: none;
+    font-size: 1.2rem;
+  }
+  main .contents .main03 .works .project-list > article .title-02.active {
+    display: block;
+  }
+  main .contents .main03 .works .project-list > article > ul {
+    width: 100%;
+    height: 18vw;
+    flex-shrink: 0;
+    margin: 2vw auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1vw;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar {
+    width: 0px;
+    z-index: 2;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-thumb {
+    background-color: #0B0D0A;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-track {
+    background-color: #dfdfdf;
+  }
+  main .contents .main03 .works .project-list > article > ul > li {
+    padding: 0.8vw;
+    border-top: 1px solid #dfdfdf;
+    color: #dfdfdf;
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+    cursor: pointer;
+  }
+  main .contents .main03 .works .project-list > article > ul > li.active {
+    color: #0B0D0A;
+  }
+  main .contents .main03 .works .project-list > article > p > a {
+    width: 100%;
+    display: block;
+    color: #0B0D0A;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  main .contents .main03 .works .project-list > article > p > a:hover {
+    color: #bc9273;
+  }
+  main .contents .main04 {
+    padding: 0;
+  }
+}
+/*
+==============================================
+=================반응형 모바일=================
+==============================================
+*/
+@media (min-width: 320px) and (max-width: 767px) {
+  main {
+    position: relative;
+  }
+  main .contents {
+    width: 100%;
+    height: 100%;
+  }
+  main .contents .main01 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  main .contents .main01 .title {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  main .contents .main01 .title > p {
+    line-height: 1.2em;
+    color: #000;
+  }
+  main .contents .main01 .title .sub-title {
+    font-size: 1.2rem;
+    font-weight: 200;
+    opacity: 0;
+    -webkit-animation: cover1 2.5s forwards;
+            animation: cover1 2.5s forwards;
+  }
+  main .contents .main01 .title .main-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden;
+    transform: translateY(100%);
+    -webkit-animation: cover2 1s linear forwards;
+            animation: cover2 1s linear forwards;
+  }
+  main .contents .main02 {
+    width: 100%;
+    padding: 5vw 0 0;
+  }
+  main .contents .main02 .me {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contents .main02 .me > p {
+    width: 8vw;
+    margin-right: 3vw;
+  }
+  main .contents .main02 .me > p > img {
+    width: 120%;
+    margin: 0 5vw;
+  }
+  main .contents .main02 .me .title-02 {
+    white-space: pre-line;
+    margin-left: 4vw;
+    line-height: 1.2em;
+    overflow: hidden;
+    transform: translateX(-100%);
+    opacity: 0;
+    -webkit-animation: cover3 1s 0.5s linear forwards;
+            animation: cover3 1s 0.5s linear forwards;
+    display: none;
+    font-size: 1rem;
+  }
+  main .contents .main02 .me .title-02.active {
+    display: block;
+  }
+  main .contents .main02 .contents-box {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  main .contents .main02 .contents-box .subject {
+    width: 80vw;
+    margin: 10vw auto;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  main .contents .main02 .contents-box .intro {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  main .contents .main02 .contents-box .intro .info-list {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 2vw;
+    flex-shrink: 0;
+  }
+  main .contents .main02 .contents-box .intro .info-list > article {
+    margin-bottom: 5vw;
+  }
+  main .contents .main02 .contents-box .intro .info-list > article .h5 {
+    margin-bottom: 2vw;
+    font-size: 0.7rem;
+  }
+  main .contents .main02 .contain01 {
+    padding: 0 0 5vw;
+  }
+  main .contents .main02 .contain01 .subject::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 6px;
+    display: block;
+    border-bottom: 1px solid #282828;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div {
+    display: flex;
+    justify-content: left;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec {
+    flex-shrink: 0;
+    white-space: pre-line;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span {
+    display: block;
+    white-space: pre-line;
+    line-height: 1.2em;
+    font-size: 0.6rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span > small {
+    font-size: 0.6rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec > span > b {
+    font-size: 0.6rem;
+  }
+  main .contents .main02 .contain01 .about .info-list > article > div .dec:nth-of-type(2) {
+    padding-left: 5vw;
+  }
+  main .contents .main02 .contain01 .about .info-list:nth-of-type(2) > article:nth-of-type(1) > div .dec:nth-of-type(2) > span {
+    line-height: 1.7em;
+  }
+  main .contents .main02 .contain02 {
+    background-color: #0B0D0A;
+    padding: 5vw 0;
+  }
+  main .contents .main02 .contain02 .subject {
+    color: #fff;
+  }
+  main .contents .main02 .contain02 .subject::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 12px;
+    display: block;
+    border-bottom: 2px solid #fff;
+  }
+  main .contents .main02 .contain02 .skill > .info-list > article .h5 {
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  main .contents .main02 .contain02 .skill > .info-list > article .h5 > img {
+    width: 20%;
+    display: inline-block;
+    padding-right: 1.5vw;
+  }
+  main .contents .main02 .contain02 .skill > .info-list > article > div .dec > span {
+    display: block;
+    white-space: pre-line;
+    color: #fff;
+    padding-bottom: 1.5vw;
+    line-height: 1.6em;
+    font-size: 0.6rem;
+  }
+  main .contents .main02 .contain02 .skill > .info-list:nth-of-type(1) > article > div .dec {
+    padding-left: 8vw;
+  }
+  main .contents .main02 .contain02 .skill > .info-list:nth-of-type(2) {
+    padding-left: 5vw;
+  }
+  main .contents .main02 .contain02 .skill > .info-list:nth-of-type(2) > article .h5 > img {
+    width: 15%;
+  }
+  main .contents .main02 .contain02 .skill > .info-list:nth-of-type(2) > article > div .dec {
+    padding-left: 5vw;
+  }
+  main .contents .main03 {
+    width: 100%;
+    padding: 11vw 0 0;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  main .contents .main03 .works {
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  main .contents .main03 .works > div {
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  main .contents .main03 .works .project-img {
+    width: 70vw;
+    height: 40vw;
+    float: none;
+    overflow: hidden;
+    margin: 0 auto 5vw;
+  }
+  main .contents .main03 .works .project-img > ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  main .contents .main03 .works .project-img > ul > li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  main .contents .main03 .works .project-img > ul > li > span {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > b {
+    width: 100%;
+    height: 100%;
+    padding: 140px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: pre-line;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > b > small {
+    color: #fff;
+    font-size: 1rem;
+  }
+  main .contents .main03 .works .project-img > ul > li > span > img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .contents .main03 .works .project-img > ul > li > span:hover > b {
+    display: inline-block;
+  }
+  main .contents .main03 .works .project-img > ul > li.active {
+    display: block;
+  }
+  main .contents .main03 .works .project-list {
+    width: 70vw;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    max-width: 80vw;
+    max-height: 50vw;
+    float: none;
+  }
+  main .contents .main03 .works .project-list > article {
+    height: 100%;
+  }
+  main .contents .main03 .works .project-list > article .title-02 {
+    flex-shrink: 0;
+    white-space: initial;
+    transform: translateY(-100%);
+    opacity: 0;
+    -webkit-animation: cover4 1s 0.5s linear forwards;
+            animation: cover4 1s 0.5s linear forwards;
+    display: none;
+    font-size: 1.2rem;
+  }
+  main .contents .main03 .works .project-list > article .title-02.active {
+    display: block;
+  }
+  main .contents .main03 .works .project-list > article > ul {
+    width: 100%;
+    height: 18vw;
+    flex-shrink: 0;
+    margin: 2vw auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1vw;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar {
+    width: 0px;
+    z-index: 2;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-thumb {
+    background-color: #0B0D0A;
+  }
+  main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-track {
+    background-color: #dfdfdf;
+  }
+  main .contents .main03 .works .project-list > article > ul > li {
+    padding: 0.8vw;
+    border-top: 1px solid #dfdfdf;
+    color: #dfdfdf;
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+    cursor: pointer;
+  }
+  main .contents .main03 .works .project-list > article > ul > li.active {
+    color: #0B0D0A;
+  }
+  main .contents .main03 .works .project-list > article > p > a {
+    width: 100%;
+    display: block;
+    color: #0B0D0A;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  main .contents .main03 .works .project-list > article > p > a:hover {
+    color: #bc9273;
+  }
+  main .contents .main04 {
+    padding: 0;
+  }
+}/*# sourceMappingURL=index.css.map */

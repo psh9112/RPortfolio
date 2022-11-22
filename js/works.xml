@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <content>
+        <code>0</code>
+        <title>전통시장 통통</title>
+        <link>href="https://psh9112.github.io/project-renewal/" target="_blank"</link>
+
+        <contribute>기획 및 디자인, 퍼블리싱 100%</contribute>
+        <period>제작기간 45일</period>
+        <string>기존의 웹사이트에서 명확하지 않은 타겟과 너무 많은 콘텐츠로 가독성을 떨어뜨리고
+            트렌드에 맞지 않는 디자인과 반응형 웹에 대해 개선이 필요해 보였습니다.
+
+            20~30대 소비자를 타깃으로 시장의 활성화를 위해 최대한 가독성이 좋게 심플한 레이아웃으로
+            콘텐츠를 구성해 전통시장의 매력과 주변 관광지를 함께 소개하고 싶었습니다.</string>
+
+        <img>./img/renewal-img.png</img>
+    </content>
+
+
+    <content>
+        <code>1</code>
+        <title>VA Corporation</title>
+        <link>onclick="window.open('https://psh9112.github.io/project_clone/', '_blank', 'left=100,top=100,width=412,height=915')"</link>
+
+        <contribute>퍼블리싱 100%</contribute>
+        <period>제작기간 13일</period>
+
+        <string>최대한 원래의 사이트의 다양한 기능들을 배우고 구현하고자 노력했습니다.
+                이 과정에서 svg, canvas와 같이 새로운 것을 추가적으로 배우게 되었으며,
+                또한, 클릭과 스크롤 이벤트, 슬라이드 플러그인을 구현하는 것에 어려움을 겪었었지만,
+                조금이나마 성장하는 계기가 되었습니다.</string>
+
+        <img>./img/clone-img.png</img>
+    </content>
+
+
+    <content>
+        <code>2</code>
+        <title>생활 쏙 법</title>
+        <link>onclick="window.open('https://psh9112.github.io/Team-project/', '_blank', 'left=100,top=100,width=412,height=915')"</link>
+
+        <contribute>기획 및 디자인, 퍼블리싱 70%</contribute>
+        <period>제작기간 10일</period>
+
+        <string>API를 활용해 20~ 30대 사회초년생 또는 청년들이 계약 또는 부당한 대우를 받았을 때
+            대처 할 수 있도록 근로, 자취와 관련된 법률 서비스를 제공하는 사이트를
+            퍼블리셔 2명을 팀으로 제작했습니다.</string>
+
+        <img>./img/api-img.png</img>
+    </content>
+
+</response>

@@ -1,0 +1,31 @@
+{
+    "product":[
+        {
+            "code":0,
+            "title":"renewal",
+            "name":"전통시장 통통",
+            "detail":"“전통시장 통통” 반응형 웹 페이지",
+            "photo":"./img/p_renewal.jpg",
+            "period": "45일",
+            "level": "100%"
+        },
+        {
+            "code":1,
+            "title":"clone",
+            "name":"VA Corporation",
+            "detail":"“VA Corporation” 모바일 웹 페이지",
+            "photo":"./img/p_clone.jpg",
+            "period": "13일",
+            "level": "100%"
+        },
+        {
+            "code":2,
+            "title":"api",
+            "name":"생활 쏙 법",
+            "detail":"생활 쏙 법” 모바일 웹 페이지",
+            "photo":"./img/p_team-project.jpg",
+            "period": "10일",
+            "level": "70%"
+        }
+    ]
+}

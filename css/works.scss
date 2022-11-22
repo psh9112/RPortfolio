@@ -1,0 +1,186 @@
+@import "_common";
+
+//home btn
+.home_btn{
+    >a{
+        position: fixed;
+        bottom: 18%;
+        right: 10.2%;
+        z-index: 10;
+
+        >svg{
+            width: 90%;
+            >path{
+                &:hover{
+                    fill: #bc9273;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .contain {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #0b0d0a;
+        margin: 0 auto;
+
+
+        .sub-navi {
+            width: $content;
+            margin: 7vw auto 11vw;
+
+            >article {
+                margin-bottom: 2vw;
+
+                .title-02 {
+                    color: #fff;
+
+                    &::after {
+                        content: '';
+                        clear: both;
+                        width: 100%;
+                        height: 12px;
+                        display: block;
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+
+            .portfolio {
+                margin: 3vw auto 4vw;
+                .port_nav {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .sub_tab {
+                        color: #b1b1b1;
+                        cursor: pointer;
+
+                        &.active {
+                            color: #fff;
+                            font-weight: bold;
+                            text-shadow: 3px 3px 5px #b1b1b1;
+                        }
+                    }
+                }
+            }
+
+
+            .section-title {
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 3vw;
+
+                .tab-title {
+                    margin-right: 5vw;
+                    display: none;
+
+                    >h3 {
+                        font-size: 2.5rem;
+                        color: #b1b1b1;
+
+                        >b {
+                            font-size: 5rem;
+                            color: #b1b1b1;
+                        }
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+
+            .explain {
+                .contains {
+                    .sub-proj {
+                        // 차민규(수정)
+                        // display: none;
+
+                        .proj-title {
+                            margin-bottom: 3vw;
+
+                            >h4 {
+                                display: inline-block;
+                                font-size: 1.75rem;
+                                color: #fff;
+                                padding-right: 3vw;
+                            }
+
+                            >a {
+                                display: inline-block;
+                                color: #fff;
+
+                                &:hover {
+                                    color: #bc9273;
+                                }
+                            }
+                        }
+
+                        .description {
+                            margin-bottom: 8vw;
+
+                            >ul {
+                                display: flex;
+                                justify-content: left;
+
+                                >li {
+                                    margin-right: 3vw;
+
+                                    >p {
+                                        white-space: pre-line;
+                                        color: #fff;
+                                        padding: 1vw 0 0;
+
+                                        >b {
+                                            font-size: 1.25rem;
+                                            color: #fff;
+                                        }
+
+                                        >span {
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.open {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// text-shadow: 5px 5px 3px #fff;
+
+
+/*
+==============================================
+=================반응형 데스크탑================
+==============================================
+*/
+@media (min-width:1025px) and (max-width:1600px) {}
+
+
+/* 
+==============================================
+=================반응형 타블랫=================
+==============================================
+*/
+@media (min-width:768px) and (max-width:1024px) {}
+
+
+/*
+==============================================
+=================반응형 모바일=================
+==============================================
+*/
+
+@media (min-width:320px) and (max-width:767px) {}
