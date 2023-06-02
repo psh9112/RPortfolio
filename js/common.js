@@ -110,13 +110,6 @@ function init() {
     }
 
 
-    // top btn
-
-    $('.top_btn > button').on('click', function () {
-        $('html').animate({ scrollTop: 0 }, 500);
-        return false;
-    });
-
 }
 
 $(window).on('load', init);

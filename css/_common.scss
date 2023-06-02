@@ -596,7 +596,7 @@ footer {
     .top_btn {
         position: fixed;
         bottom: 10%;
-        right: 10%;
+        right: 5%;
         z-index: 10;
 
         >button {
@@ -870,8 +870,8 @@ footer {
         // top-button
         .top_btn {
             position: fixed;
-            bottom: 10%;
-            right: 10%;
+            bottom: 8%;
+            right: 5%;
             z-index: 10;
     
             >button {
@@ -1086,7 +1086,7 @@ footer {
 
                         .h2 {
                             margin-bottom: 15px;
-                            font-size: 0.8rem;
+                            font-size: 0.7rem;
                         }
     
                         >div {
@@ -1099,12 +1099,12 @@ footer {
     
                                 >span {
                                     display: block;
-                                    margin: 20px 40px 20px 0;
+                                    margin: 20px 25px 20px 0;
                                     text-align: left;
-                                    font-size: 0.6rem;
+                                    font-size: 0.55rem;
     
                                     >a {
-                                        font-size: 0.6rem;
+                                        font-size: 0.55rem;
                                     }
                                 }
                             }
@@ -1113,7 +1113,7 @@ footer {
                         .last {
                             width: 100%;
                             margin-top: 15px;
-                            font-size: 0.6rem;
+                            font-size: 0.55rem;
     
                         }
                     }
@@ -1123,13 +1123,13 @@ footer {
                         margin-bottom: 20px;
                         >a {
                             display: inline-block;
-                            padding-left: 20px;
-                            vertical-align: top;
+                            padding-left: 10px;
+                            vertical-align: middle;
                             &:nth-of-type(1){
                                 padding-left: 0;
                             }
                             >svg {
-                                width: 60%;
+                                width: 50%;
                             }
     
                             &:hover {
@@ -1149,8 +1149,8 @@ footer {
         // top-button
         .top_btn {
             position: fixed;
-            bottom: 10%;
-            right: 10%;
+            bottom: 5%;
+            right: 5%;
             z-index: 10;
     
             >button {

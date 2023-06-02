@@ -26,11 +26,13 @@ function printFn(data) {
     period = data.find('period').html();
     string = data.find('string').html();
     img = data.find('img').html();
+    page = data.find('page').html();
 
     elTag = `<div class="sub-proj">
     <article class="proj-title">
         <h4>${title}</h4>
-        <a ${link}>웹페이지 바로가기</a>
+        <a ${link}>페이지 보기</a>
+        <a ${page}>기획안 보기</a>
     </article>
 
     <div class="description">
@@ -42,7 +44,7 @@ function printFn(data) {
             </li>
             <li class="rea">
                 <p><b>프로젝트 개요</b></p>
-                <p class="string">${string}</p>
+                <p class="string"><span>${string}</span></p>
             </li>
         </ul>
     </div>
@@ -75,7 +77,7 @@ const elTit = document.querySelectorAll('.sub-navi .section-title .tab-title'); 
 
 function selectFn() {
     let idx = 0;
-    
+
     elBtns.forEach(function (el, key) {
 
         // 포트폴리오의 테마를 클릭하면 각 첫번째의 콘텐츠를 보여주고, 선택된 해당 순번의 콘텐츠를 보여주기
@@ -102,12 +104,10 @@ function selectFn() {
 
 }
 
-console.log(elList);
 
+    // top btn
 
-// top btn
-
-$('.top_btn > button').on('click', function () {
-    $('html').animate({ scrollTop: 0 }, 500);
-    return false;
-});
+    $('.top_btn > button').on('click', function () {
+        $('html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });

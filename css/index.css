@@ -464,7 +464,7 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   .top_btn {
     position: fixed;
     bottom: 10%;
-    right: 10%;
+    right: 5%;
     z-index: 10;
   }
   .top_btn > button {
@@ -668,8 +668,8 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   }
   .top_btn {
     position: fixed;
-    bottom: 10%;
-    right: 10%;
+    bottom: 8%;
+    right: 5%;
     z-index: 10;
   }
   .top_btn > button {
@@ -834,7 +834,7 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   }
   footer .bottom .contain .info01 .h2 {
     margin-bottom: 15px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   footer .bottom .contain .info01 > div {
     display: flex;
@@ -846,17 +846,17 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   }
   footer .bottom .contain .info01 > div > p > span {
     display: block;
-    margin: 20px 40px 20px 0;
+    margin: 20px 25px 20px 0;
     text-align: left;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   footer .bottom .contain .info01 > div > p > span > a {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   footer .bottom .contain .info01 .last {
     width: 100%;
     margin-top: 15px;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   footer .bottom .contain .info02 {
     flex-shrink: 0;
@@ -864,22 +864,22 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   }
   footer .bottom .contain .info02 > a {
     display: inline-block;
-    padding-left: 20px;
-    vertical-align: top;
+    padding-left: 10px;
+    vertical-align: middle;
   }
   footer .bottom .contain .info02 > a:nth-of-type(1) {
     padding-left: 0;
   }
   footer .bottom .contain .info02 > a > svg {
-    width: 60%;
+    width: 50%;
   }
   footer .bottom .contain .info02 > a:hover > svg > path {
     fill: #bc9273;
   }
   .top_btn {
     position: fixed;
-    bottom: 10%;
-    right: 10%;
+    bottom: 5%;
+    right: 5%;
     z-index: 10;
   }
   .top_btn > button {
@@ -922,8 +922,7 @@ main .contents .main01 .title .sub-title {
   font-size: 5rem;
   font-weight: 200;
   opacity: 0;
-  -webkit-animation: cover1 2.5s forwards;
-          animation: cover1 2.5s forwards;
+  animation: cover1 2.5s forwards;
 }
 main .contents .main01 .title .main-title {
   font-size: 6rem;
@@ -931,8 +930,7 @@ main .contents .main01 .title .main-title {
   text-transform: uppercase;
   overflow: hidden;
   transform: translateY(100%);
-  -webkit-animation: cover2 1s linear forwards;
-          animation: cover2 1s linear forwards;
+  animation: cover2 1s linear forwards;
 }
 main .contents .main02 {
   width: 100%;
@@ -960,8 +958,7 @@ main .contents .main02 .me .title-02 {
   overflow: hidden;
   transform: translateX(-100%);
   opacity: 0;
-  -webkit-animation: cover3 1s 0.5s linear forwards;
-          animation: cover3 1s 0.5s linear forwards;
+  animation: cover3 1s 0.5s linear forwards;
   display: none;
 }
 main .contents .main02 .me .title-02.active {
@@ -1149,8 +1146,7 @@ main .contents .main03 .works .project-list > article .title-02 {
   white-space: pre-line;
   transform: translateY(-100%);
   opacity: 0;
-  -webkit-animation: cover4 1s 0.5s linear forwards;
-          animation: cover4 1s 0.5s linear forwards;
+  animation: cover4 1s 0.5s linear forwards;
   display: none;
 }
 main .contents .main03 .works .project-list > article .title-02.active {
@@ -1196,24 +1192,8 @@ main .contents .main04 {
   padding: 5vw 0 0;
 }
 
-@-webkit-keyframes cover1 {
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes cover1 {
   100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes cover2 {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -1227,16 +1207,6 @@ main .contents .main04 {
     opacity: 1;
   }
 }
-@-webkit-keyframes cover3 {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 @keyframes cover3 {
   0% {
     transform: translateX(-100%);
@@ -1244,16 +1214,6 @@ main .contents .main04 {
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes cover4 {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -1300,8 +1260,7 @@ main .contents .main04 {
     font-size: 3rem;
     font-weight: 200;
     opacity: 0;
-    -webkit-animation: cover1 2.5s forwards;
-            animation: cover1 2.5s forwards;
+    animation: cover1 2.5s forwards;
   }
   main .contents .main01 .title .main-title {
     font-size: 4.5rem;
@@ -1309,8 +1268,7 @@ main .contents .main04 {
     text-transform: uppercase;
     overflow: hidden;
     transform: translateY(100%);
-    -webkit-animation: cover2 1s linear forwards;
-            animation: cover2 1s linear forwards;
+    animation: cover2 1s linear forwards;
   }
   main .contents .main02 {
     width: 100%;
@@ -1338,8 +1296,7 @@ main .contents .main04 {
     overflow: hidden;
     transform: translateX(-100%);
     opacity: 0;
-    -webkit-animation: cover3 1s 0.5s linear forwards;
-            animation: cover3 1s 0.5s linear forwards;
+    animation: cover3 1s 0.5s linear forwards;
     display: none;
     font-size: 1.2rem;
   }
@@ -1539,8 +1496,7 @@ main .contents .main04 {
     white-space: pre-line;
     transform: translateY(-100%);
     opacity: 0;
-    -webkit-animation: cover4 1s 0.5s linear forwards;
-            animation: cover4 1s 0.5s linear forwards;
+    animation: cover4 1s 0.5s linear forwards;
     display: none;
     font-size: 1.2rem;
   }
@@ -1597,6 +1553,7 @@ main .contents .main04 {
 @media (min-width: 768px) and (max-width: 1024px) {
   main {
     position: relative;
+    overflow: hidden;
   }
   main .contents {
     width: 100%;
@@ -1622,8 +1579,7 @@ main .contents .main04 {
     font-size: 2.5rem;
     font-weight: 200;
     opacity: 0;
-    -webkit-animation: cover1 2.5s forwards;
-            animation: cover1 2.5s forwards;
+    animation: cover1 2.5s forwards;
   }
   main .contents .main01 .title .main-title {
     font-size: 3.5rem;
@@ -1631,8 +1587,7 @@ main .contents .main04 {
     text-transform: uppercase;
     overflow: hidden;
     transform: translateY(100%);
-    -webkit-animation: cover2 1s linear forwards;
-            animation: cover2 1s linear forwards;
+    animation: cover2 1s linear forwards;
   }
   main .contents .main02 {
     width: 100%;
@@ -1660,8 +1615,7 @@ main .contents .main04 {
     overflow: hidden;
     transform: translateX(-100%);
     opacity: 0;
-    -webkit-animation: cover3 1s 0.5s linear forwards;
-            animation: cover3 1s 0.5s linear forwards;
+    animation: cover3 1s 0.5s linear forwards;
     display: none;
     font-size: 1rem;
   }
@@ -1868,8 +1822,7 @@ main .contents .main04 {
     white-space: initial;
     transform: translateY(-100%);
     opacity: 0;
-    -webkit-animation: cover4 1s 0.5s linear forwards;
-            animation: cover4 1s 0.5s linear forwards;
+    animation: cover4 1s 0.5s linear forwards;
     display: none;
     font-size: 1.2rem;
   }
@@ -1928,6 +1881,7 @@ main .contents .main04 {
 @media (min-width: 320px) and (max-width: 767px) {
   main {
     position: relative;
+    overflow: hidden;
   }
   main .contents {
     width: 100%;
@@ -1950,20 +1904,18 @@ main .contents .main04 {
     color: #000;
   }
   main .contents .main01 .title .sub-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 200;
     opacity: 0;
-    -webkit-animation: cover1 2.5s forwards;
-            animation: cover1 2.5s forwards;
+    animation: cover1 2.5s forwards;
   }
   main .contents .main01 .title .main-title {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
     overflow: hidden;
     transform: translateY(100%);
-    -webkit-animation: cover2 1s linear forwards;
-            animation: cover2 1s linear forwards;
+    animation: cover2 1s linear forwards;
   }
   main .contents .main02 {
     width: 100%;
@@ -1991,10 +1943,9 @@ main .contents .main04 {
     overflow: hidden;
     transform: translateX(-100%);
     opacity: 0;
-    -webkit-animation: cover3 1s 0.5s linear forwards;
-            animation: cover3 1s 0.5s linear forwards;
+    animation: cover3 1s 0.5s linear forwards;
     display: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   main .contents .main02 .me .title-02.active {
     display: block;
@@ -2029,7 +1980,7 @@ main .contents .main04 {
   }
   main .contents .main02 .contents-box .intro .info-list > article .h5 {
     margin-bottom: 2vw;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   main .contents .main02 .contain01 {
     padding: 0 0 5vw;
@@ -2054,13 +2005,13 @@ main .contents .main04 {
     display: block;
     white-space: pre-line;
     line-height: 1.2em;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   main .contents .main02 .contain01 .about .info-list > article > div .dec > span > small {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
   main .contents .main02 .contain01 .about .info-list > article > div .dec > span > b {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   main .contents .main02 .contain01 .about .info-list > article > div .dec:nth-of-type(2) {
     padding-left: 5vw;
@@ -2085,7 +2036,7 @@ main .contents .main04 {
   }
   main .contents .main02 .contain02 .skill > .info-list > article .h5 {
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   main .contents .main02 .contain02 .skill > .info-list > article .h5 > img {
     width: 20%;
@@ -2098,7 +2049,7 @@ main .contents .main04 {
     color: #fff;
     padding-bottom: 1.5vw;
     line-height: 1.6em;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   main .contents .main02 .contain02 .skill > .info-list:nth-of-type(1) > article > div .dec {
     padding-left: 8vw;
@@ -2107,7 +2058,7 @@ main .contents .main04 {
     padding-left: 5vw;
   }
   main .contents .main02 .contain02 .skill > .info-list:nth-of-type(2) > article .h5 > img {
-    width: 15%;
+    width: 10%;
   }
   main .contents .main02 .contain02 .skill > .info-list:nth-of-type(2) > article > div .dec {
     padding-left: 5vw;
@@ -2128,8 +2079,8 @@ main .contents .main04 {
     flex-shrink: 0;
   }
   main .contents .main03 .works .project-img {
-    width: 70vw;
-    height: 40vw;
+    width: 80vw;
+    height: 45vw;
     float: none;
     overflow: hidden;
     margin: 0 auto 5vw;
@@ -2153,8 +2104,8 @@ main .contents .main04 {
   main .contents .main03 .works .project-img > ul > li > span > b {
     width: 100%;
     height: 100%;
-    padding: 140px 0;
-    font-size: 1.6rem;
+    padding: 50px 0;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     white-space: pre-line;
@@ -2180,9 +2131,6 @@ main .contents .main04 {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  main .contents .main03 .works .project-img > ul > li > span:hover > b {
-    display: inline-block;
-  }
   main .contents .main03 .works .project-img > ul > li.active {
     display: block;
   }
@@ -2203,10 +2151,9 @@ main .contents .main04 {
     white-space: initial;
     transform: translateY(-100%);
     opacity: 0;
-    -webkit-animation: cover4 1s 0.5s linear forwards;
-            animation: cover4 1s 0.5s linear forwards;
+    animation: cover4 1s 0.5s linear forwards;
     display: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   main .contents .main03 .works .project-list > article .title-02.active {
     display: block;
@@ -2221,7 +2168,7 @@ main .contents .main04 {
     padding-right: 1vw;
   }
   main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar {
-    width: 0px;
+    width: 1px;
     z-index: 2;
   }
   main .contents .main03 .works .project-list > article > ul::-webkit-scrollbar-thumb {
@@ -2231,10 +2178,11 @@ main .contents .main04 {
     background-color: #dfdfdf;
   }
   main .contents .main03 .works .project-list > article > ul > li {
-    padding: 0.8vw;
+    width: 90%;
+    padding: 0.8vw 1vw;
     border-top: 1px solid #dfdfdf;
     color: #dfdfdf;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     line-height: 1.4rem;
     cursor: pointer;
   }
@@ -2246,7 +2194,7 @@ main .contents .main04 {
     display: block;
     color: #0B0D0A;
     text-align: left;
-    font-size: 0.7rem;
+    font-size: 0.55rem;
   }
   main .contents .main03 .works .project-list > article > p > a:hover {
     color: #bc9273;

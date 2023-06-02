@@ -4,6 +4,7 @@
         <code>0</code>
         <title>전통시장 통통</title>
         <link>href="https://psh9112.github.io/project-renewal/" target="_blank"</link>
+        <page>href="./document/renewal_project.pdf" target="_blank"</page>
 
         <contribute>기획 및 디자인, 퍼블리싱 100%</contribute>
         <period>제작기간 45일</period>
@@ -21,7 +22,7 @@
         <code>1</code>
         <title>VA Corporation</title>
         <link>onclick="window.open('https://psh9112.github.io/project_clone/', '_blank', 'left=100,top=100,width=412,height=915')"</link>
-
+        <page>href="./document/clone_project.pdf" target="_blank"</page>
         <contribute>퍼블리싱 100%</contribute>
         <period>제작기간 13일</period>
 
@@ -38,6 +39,7 @@
         <code>2</code>
         <title>생활 쏙 법</title>
         <link>onclick="window.open('https://psh9112.github.io/Team-project/', '_blank', 'left=100,top=100,width=412,height=915')"</link>
+        <page>href="./document/api_project.pdf" target="_blank"</page>
 
         <contribute>기획 및 디자인, 퍼블리싱 70%</contribute>
         <period>제작기간 10일</period>

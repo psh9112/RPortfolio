@@ -464,7 +464,7 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   .top_btn {
     position: fixed;
     bottom: 10%;
-    right: 10%;
+    right: 5%;
     z-index: 10;
   }
   .top_btn > button {
@@ -668,8 +668,8 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   }
   .top_btn {
     position: fixed;
-    bottom: 10%;
-    right: 10%;
+    bottom: 8%;
+    right: 5%;
     z-index: 10;
   }
   .top_btn > button {
@@ -834,7 +834,7 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   }
   footer .bottom .contain .info01 .h2 {
     margin-bottom: 15px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   footer .bottom .contain .info01 > div {
     display: flex;
@@ -846,17 +846,17 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   }
   footer .bottom .contain .info01 > div > p > span {
     display: block;
-    margin: 20px 40px 20px 0;
+    margin: 20px 25px 20px 0;
     text-align: left;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   footer .bottom .contain .info01 > div > p > span > a {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   footer .bottom .contain .info01 .last {
     width: 100%;
     margin-top: 15px;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   footer .bottom .contain .info02 {
     flex-shrink: 0;
@@ -864,22 +864,22 @@ footer .bottom .contain .info02 > a:hover > svg > path {
   }
   footer .bottom .contain .info02 > a {
     display: inline-block;
-    padding-left: 20px;
-    vertical-align: top;
+    padding-left: 10px;
+    vertical-align: middle;
   }
   footer .bottom .contain .info02 > a:nth-of-type(1) {
     padding-left: 0;
   }
   footer .bottom .contain .info02 > a > svg {
-    width: 60%;
+    width: 50%;
   }
   footer .bottom .contain .info02 > a:hover > svg > path {
     fill: #bc9273;
   }
   .top_btn {
     position: fixed;
-    bottom: 10%;
-    right: 10%;
+    bottom: 5%;
+    right: 5%;
     z-index: 10;
   }
   .top_btn > button {
@@ -985,6 +985,9 @@ main .contain .sub-navi .explain .contains .sub-proj .proj-title > a {
 main .contain .sub-navi .explain .contains .sub-proj .proj-title > a:hover {
   color: #bc9273;
 }
+main .contain .sub-navi .explain .contains .sub-proj .proj-title > a:nth-of-type(2) {
+  margin-left: 3vw;
+}
 main .contain .sub-navi .explain .contains .sub-proj .description {
   margin-bottom: 8vw;
 }
@@ -1016,13 +1019,425 @@ main .contain .sub-navi .explain .contains .sub-proj.open {
 =================반응형 데스크탑================
 ==============================================
 */
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .home_btn > a {
+    position: fixed;
+    bottom: 23%;
+    right: 5%;
+    z-index: 10;
+  }
+  .home_btn > a > svg {
+    width: 75%;
+  }
+  .home_btn > a > svg > path:hover {
+    fill: #bc9273;
+  }
+  main {
+    overflow: hidden;
+  }
+  main .contain {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0b0d0a;
+    margin: 0 auto;
+  }
+  main .contain .sub-navi {
+    width: 80%;
+    margin: 7vw auto 11vw;
+  }
+  main .contain .sub-navi > article {
+    margin-bottom: 2vw;
+  }
+  main .contain .sub-navi > article .title-02 {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  main .contain .sub-navi > article .title-02::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 12px;
+    display: block;
+    border-bottom: 2px solid #fff;
+  }
+  main .contain .sub-navi .portfolio {
+    margin: 3vw auto 4vw;
+  }
+  main .contain .sub-navi .portfolio .port_nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  main .contain .sub-navi .portfolio .port_nav .sub_tab {
+    flex-shrink: 0;
+    color: #b1b1b1;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+  main .contain .sub-navi .portfolio .port_nav .sub_tab.active {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #b1b1b1;
+  }
+  main .contain .sub-navi .section-title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3vw;
+  }
+  main .contain .sub-navi .section-title .tab-title {
+    margin-right: 5vw;
+    display: none;
+  }
+  main .contain .sub-navi .section-title .tab-title > h3 {
+    font-size: 2.2rem;
+    color: #b1b1b1;
+  }
+  main .contain .sub-navi .section-title .tab-title > h3 > b {
+    font-size: 4rem;
+    color: #b1b1b1;
+  }
+  main .contain .sub-navi .section-title .tab-title.active {
+    display: block;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title {
+    margin-bottom: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > h4 {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #fff;
+    padding-right: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a:hover {
+    color: #bc9273;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a:nth-of-type(2) {
+    margin-left: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description {
+    margin-bottom: 8vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul {
+    display: flex;
+    justify-content: left;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li {
+    margin-right: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p {
+    white-space: pre-line;
+    color: #fff;
+    padding: 1vw 0 0;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p > b {
+    font-size: 1rem;
+    color: #fff;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p > span {
+    font-size: 0.75rem;
+    color: #fff;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img {
+    width: 90%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img > p {
+    width: 100%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img > p > img {
+    width: 100%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj.open {
+    display: block;
+  }
+}
 /* 
 ==============================================
 =================반응형 타블랫=================
 ==============================================
 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home_btn > a {
+    position: fixed;
+    bottom: 18%;
+    right: 5%;
+    z-index: 10;
+  }
+  .home_btn > a > svg {
+    width: 75%;
+  }
+  .home_btn > a > svg > path:hover {
+    fill: #bc9273;
+  }
+  main {
+    overflow: hidden;
+  }
+  main .contain {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0b0d0a;
+    margin: 0 auto;
+  }
+  main .contain .sub-navi {
+    width: 80%;
+    margin: 7vw auto 11vw;
+  }
+  main .contain .sub-navi > article {
+    margin-bottom: 2vw;
+  }
+  main .contain .sub-navi > article .title-02 {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  main .contain .sub-navi > article .title-02::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 12px;
+    display: block;
+    border-bottom: 2px solid #fff;
+  }
+  main .contain .sub-navi .portfolio {
+    margin: 3vw auto 4vw;
+  }
+  main .contain .sub-navi .portfolio .port_nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  main .contain .sub-navi .portfolio .port_nav .sub_tab {
+    flex-shrink: 0;
+    color: #b1b1b1;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+  main .contain .sub-navi .portfolio .port_nav .sub_tab.active {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #b1b1b1;
+  }
+  main .contain .sub-navi .section-title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3vw;
+  }
+  main .contain .sub-navi .section-title .tab-title {
+    margin-right: 5vw;
+    display: none;
+  }
+  main .contain .sub-navi .section-title .tab-title > h3 {
+    font-size: 2.2rem;
+    color: #b1b1b1;
+  }
+  main .contain .sub-navi .section-title .tab-title > h3 > b {
+    font-size: 4rem;
+    color: #b1b1b1;
+  }
+  main .contain .sub-navi .section-title .tab-title.active {
+    display: block;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title {
+    margin-bottom: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > h4 {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #fff;
+    padding-right: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a:hover {
+    color: #bc9273;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a:nth-of-type(2) {
+    margin-left: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description {
+    margin-bottom: 8vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul {
+    display: flex;
+    justify-content: left;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li {
+    margin-right: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p {
+    white-space: pre-line;
+    color: #fff;
+    padding: 1vw 0 0;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p > b {
+    font-size: 1rem;
+    color: #fff;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p > span {
+    font-size: 0.75rem;
+    color: #fff;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img {
+    width: 90%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img > p {
+    width: 100%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img > p > img {
+    width: 100%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj.open {
+    display: block;
+  }
+}
 /*
 ==============================================
 =================반응형 모바일=================
 ==============================================
-*//*# sourceMappingURL=works.css.map */
+*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .home_btn > a {
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    z-index: 10;
+  }
+  .home_btn > a > svg {
+    width: 75%;
+  }
+  .home_btn > a > svg > path:hover {
+    fill: #bc9273;
+  }
+  main {
+    overflow: hidden;
+  }
+  main .contain {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #0b0d0a;
+    margin: 0 auto;
+  }
+  main .contain .sub-navi {
+    width: 80%;
+    margin: 7vw auto 11vw;
+  }
+  main .contain .sub-navi > article {
+    padding-top: 5vw;
+    margin-bottom: 2vw;
+  }
+  main .contain .sub-navi > article .title-02 {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  main .contain .sub-navi > article .title-02::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    height: 12px;
+    display: block;
+    border-bottom: 2px solid #fff;
+  }
+  main .contain .sub-navi .portfolio {
+    margin: 3vw auto 4vw;
+  }
+  main .contain .sub-navi .portfolio .port_nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  main .contain .sub-navi .portfolio .port_nav .sub_tab {
+    flex-shrink: 0;
+    color: #b1b1b1;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  main .contain .sub-navi .portfolio .port_nav .sub_tab.active {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px #b1b1b1;
+  }
+  main .contain .sub-navi .section-title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5vw;
+    margin-top: 10vw;
+  }
+  main .contain .sub-navi .section-title .tab-title {
+    margin-right: 5vw;
+    display: none;
+  }
+  main .contain .sub-navi .section-title .tab-title > h3 {
+    font-size: 1.2rem;
+    color: #b1b1b1;
+  }
+  main .contain .sub-navi .section-title .tab-title > h3 > b {
+    font-size: 2rem;
+    color: #b1b1b1;
+  }
+  main .contain .sub-navi .section-title .tab-title.active {
+    display: block;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title {
+    margin-bottom: 6vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > h4 {
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    padding-right: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.5rem;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a:hover {
+    color: #bc9273;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-title > a:nth-of-type(2) {
+    margin-left: 3vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description {
+    margin-bottom: 15vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul {
+    display: block;
+    justify-content: left;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li {
+    margin-right: 3vw;
+    margin-bottom: 5vw;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p {
+    white-space: pre-line;
+    color: #fff;
+    padding: 1vw 0 0;
+    line-height: 0.5em;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p > b {
+    font-size: 0.65rem;
+    color: #fff;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .description > ul > li > p > span {
+    font-size: 0.5rem;
+    color: #fff;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img {
+    width: 100%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img > p {
+    width: 100%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj .proj-img > p > img {
+    width: 100%;
+  }
+  main .contain .sub-navi .explain .contains .sub-proj.open {
+    display: block;
+  }
+}/*# sourceMappingURL=works.css.map */
